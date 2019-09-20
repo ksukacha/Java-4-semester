@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="format.Format">
+   <children>
+      <ComboBox fx:id="formatBox" layoutX="285.0" layoutY="131.0" onAction="#formatChanged" prefWidth="150.0" />
+      <Label layoutX="319.0" layoutY="106.0" text="Choose format:" />
+      <TextField fx:id="inputTextField" layoutX="124.0" layoutY="131.0" onKeyTyped="#formatTyped" />
+      <Circle fx:id="circleValidator" fill="#f1ff1f" layoutX="67.0" layoutY="144.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
